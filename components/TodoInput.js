@@ -5,6 +5,8 @@ var TodoInput = React.createClass({
 
   handleSubmit: function (e) {
     e.preventDefault();
+    //call dispatch to store
+    //in store call reducer
     this.props.addTodo(this.state.text);
     this.setState({
       text: ''

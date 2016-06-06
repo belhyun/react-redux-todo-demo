@@ -23,8 +23,8 @@ var mapStateToProps = function (state) {
 
 var mapDispatchToProps = function (dispatch) {
   return {
+    //App에서 dispatch 메소드를 호출하지 않기 위해 사용
     actions: bindActionCreators(actions, dispatch)
   };
 }
-
 module.exports = connect(mapStateToProps, mapDispatchToProps)(App);
